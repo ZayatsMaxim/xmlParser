@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<touristVouchers
+    xmlns = "touristVouchers"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation = "src/main/resources/vouchers.xsd">
+
+    <tour id="1">
+        <tourType>Holiday Tour</tourType>
+        <country>Zimbabwe</country>
+        <transport>Airplane</transport>
+        <cost>1800</cost>
+        <hotelCharacteristics>
+            <numberOfStars>4</numberOfStars>
+            <mealPlan>HB</mealPlan>
+            <roomType>3</roomType>
+            <hasTelevision>true</hasTelevision>
+            <hasConditioner>true</hasConditioner>
+        </hotelCharacteristics>
+        <numberOfDays>14</numberOfDays>
+    </tour>
+
+    <tour id="2">
+        <tourType>Last-minute Tour</tourType>
+        <country>Papua New Guinea</country>
+        <transport>Airplane</transport>
+        <cost>900</cost>
+        <hotelCharacteristics>
+            <numberOfStars>3</numberOfStars>
+            <mealPlan>BB</mealPlan>
+            <roomType>2</roomType>
+            <hasTelevision>false</hasTelevision>
+            <hasConditioner>true</hasConditioner>
+        </hotelCharacteristics>
+        <numberOfDays>7</numberOfDays>
+    </tour>
+
+    <excursion id="3">
+        <tourType>Excursion</tourType>
+        <country>Estonia</country>
+        <transport>Bus</transport>
+        <cost>400</cost>
+        <city>Tallinn</city>
+    </excursion>
+</touristVouchers>

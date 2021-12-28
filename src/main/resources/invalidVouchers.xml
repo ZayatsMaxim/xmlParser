@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<touristVouchers>
+    <tour id="1">
+        <tourType> Holiday Tour </tourType>
+        <coutry> 176.030 </coutry>
+        <numberOfDays> 14 </numberOfDays>
+        <transport> Airplane </transport>
+        <hotelCharateristics>
+            <numberOfStars> 4 </numberOfStars>
+            <mealPlan> HB </mealPlan>
+            <roomType> 3 </roomType>
+            <hasTelevision> true </hasTelevision>
+            <hasConditioner> true </hasConditioner>
+        </hotelCharateristics>
+        <cost> 1800 </cost>
+        <wrongTag></wrongTag>
+    </tour>
+
+    <tour id="2">
+        <tourType> Last-minute Tour </tourType>
+        <coutry> Papua New Guinea </coutry>
+        <numberOfDays> 7 </numberOfDays>
+        <transport> Airplane </transport>
+        <hotelCharateristics>
+            <numberOfStars> 3 </numberOfStars>
+            <mealPlan> 14 </mealPlan>
+            <roomType> 2 </roomType>
+            <hasTelevision> jjkmjfzs </hasTelevision>
+            <hasConditioner> true </hasConditioner>
+        </hotelCharateristics>
+        <cost> true </cost>
+        <wrongTag></wrongTag>
+    </tour>
+
+    <excursion id="3">
+        <tourType> Excursion </tourType>
+        <coutry> Estonia </coutry>
+        <city> Tallinn </city>
+        <transport> Bus </transport>
+        <cost> ert </cost>
+        <wrongTag></wrongTag>
+    </excursion>
+
+</touristVouchers>
