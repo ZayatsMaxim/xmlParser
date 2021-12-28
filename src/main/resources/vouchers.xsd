@@ -1,0 +1,68 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<schema xmlns = "http://www.w3.org/2001/XMLSchema"
+        targetNamespace = "touristVouchers"
+        xmlns:types = "touristVouchers"
+        elementFormDefault = "qualified">
+
+    <element name = "touristVouchers">
+        <complexType>
+            <choice maxOccurs="unbounded">
+                <element name = "tour" type = "types:Tour"/>
+                <element name = "excursion" type = "types:Excursion"/>
+            </choice>
+        </complexType>
+    </element>
+
+    <complexType name = "voucher">
+        <sequence>
+            <element name = "tourType" type = "string"></element>
+            <element name = "country" type = "string"></element>
+            <element name = "transport" type = "string"></element>
+            <element name = "cost" type = "positiveInteger"></element>
+        </sequence>
+        <attribute name = "id" type="positiveInteger" use = "required"></attribute>
+    </complexType>
+
+    <complexType name = "Tour">
+        <complexContent>
+            <extension base = "types:voucher">
+                <sequence>
+                    <element name = "hotelCharacteristics" type = "types:Hotel"></element>
+                    <element name = "numberOfDays" type = "positiveInteger"></element>
+                </sequence>
+            </extension>
+        </complexContent>
+    </complexType>
+
+    <complexType name = "Excursion">
+        <complexContent>
+            <extension base = "types:voucher">
+                <sequence>
+                    <element name = "city" type = "string"></element>
+                </sequence>
+            </extension>
+        </complexContent>
+    </complexType>
+
+    <complexType name = "Hotel">
+        <sequence>
+            <element name = "numberOfStars" type = "positiveInteger"></element>
+            <element name = "mealPlan" type = "types:MealTypes"></element>
+            <element name = "roomType" type = "positiveInteger"></element>
+            <element name = "hasTelevision" type = "boolean"></element>
+            <element name = "hasConditioner" type = "boolean"></element>
+        </sequence>
+    </complexType>
+
+    <simpleType name = "MealTypes">
+        <restriction base="string">
+            <enumeration value = "RO"></enumeration>
+            <enumeration value = "BB"></enumeration>
+            <enumeration value = "HB"></enumeration>
+            <enumeration value = "FB"></enumeration>
+            <enumeration value = "ALL"></enumeration>
+        </restriction>
+    </simpleType>
+
+</schema>
+
